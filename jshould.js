@@ -1,5 +1,5 @@
 /*
-jShould v2.0 JavaScript Assertion Library for QUnit
+jShould v2.0.1 JavaScript Assertion Library for QUnit
 http://eliperelman.com/jshould
 
 Copyright (c) 2011 Eli Perelman
@@ -118,11 +118,11 @@ Dual licensed under the MIT or GPL Version 2 licenses.
 			return this;
 		},
 		shouldBeLessThan: function (num) {
-			ok(is(this.context, 'number') && this.context < num, 'The argument should have been at least ' + num + '.');
+			ok(is(this.context, 'number') && this.context < num, 'The argument should have been less than ' + num + '.');
 			return this;
 		},
 		shouldBeMoreThan: function (num) {
-			ok(is(this.context, 'number') && this.context > num, 'The argument should have been at most ' + num + '.');
+			ok(is(this.context, 'number') && this.context > num, 'The argument should have been more than ' + num + '.');
 			return this;
 		},
 		shouldThrowException: function () {
