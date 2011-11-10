@@ -25,7 +25,7 @@ test("qunit jshould test 1", function () {
     $$(username)
         .shouldNotBeNull()
     	.shouldBeDefined()
-    	.shouldNotContain('&lt;');
+    	.shouldNotContain('<');
 });
 
 ```
@@ -37,7 +37,7 @@ jShould is even extensible so you can create your own, more complex and reusable
 ``` javascript
 
 $$.extend('shouldBeValidUsername', 'The username should have been valid.', function (username) {
-    return username != null && username.indexOf('&lt;') === -1;
+    return username != null && username.indexOf('<') === -1;
 });
 
 test("qunit jshould test 1", function () {
@@ -104,7 +104,7 @@ expression is a function which gets passed one argument: the value being asserte
 ``` javascript
 // EXAMPLE:
 $$.extend('shouldBeValidUsername', 'The username should have been valid.', function (value) {
-    return value != null && value.indexOf('&lt;') === -1;
+    return value != null && value.indexOf('<') === -1;
 });
 
 $$('john_doe').shouldBeValidUsername();
@@ -299,7 +299,7 @@ Assertion passes if the assertion context evaluates to true (truthy evaluation).
 
 ``` javascript
 // EXAMPLE
-$$(10 &lt; 100).shouldBeTrue();
+$$(10 < 100).shouldBeTrue();
 $$(!!1).shouldBeTrue();
 ```
 
@@ -313,7 +313,7 @@ Assertion passes if the assertion context evaluates to false (falsy evaluation).
 
 ``` javascript
 // EXAMPLE
-$$(10 &gt; 100).shouldBeFalse();
+$$(10 > 100).shouldBeFalse();
 $$(!!window.myProp).shouldBeFalse();
 ```
 
