@@ -54,6 +54,7 @@ Can also be used via shorthand:
 
     $$(3);
 
+__ __
 
 `$$.noConflict()`
 
@@ -68,6 +69,7 @@ Reassign to a different name:
     // EXAMPLE: Now you can use your own name when asserting:
     Assert(3).shouldByType('number');
 
+__ __
 
 `$$.extend(name, message, expression)`
 
@@ -96,6 +98,7 @@ Equivalent to QUnit's deepEqual.
     var car = { color: 'green' };
     $$(car).shouldEqual({ color: 'green' });
 
+__ __
 
 `.shouldNotEqual(value)`
 
@@ -106,6 +109,7 @@ Equivalent to QUnit's notDeepEqual.
     var car = { color: 'green' };
     $$(car).shouldNotEqual({ color: 'red' });
 
+__ __
 
 `.shouldBeType(type)`
 
@@ -116,6 +120,7 @@ These are the same types as those returned from JavaScript's typeof operator.
     var car = { color: 'green' };
     $$(car).shouldBeType('object');
 
+__ __
 
 `.shouldNotBeType(type)`
 
@@ -126,6 +131,7 @@ These are the same types as those returned from JavaScript's typeof operator.
     var car = { color: 'green' };
     $$(car).shouldNotBeType('string');
 
+__ __
 
 `.shouldContain(value)`
 
@@ -138,6 +144,7 @@ If the context is an object, the object's keys are searched for any matches agai
     $$([0, 10, 20]).shouldContain(10);
     $$({ color: 'green' }).shouldContain('color');
 
+__ __
 
 `.shouldNotContain(value)`
 
@@ -151,6 +158,7 @@ the value.
     $$([0, 10, 20]).shouldNotContain(30);
     $$({ color: 'green' }).shouldNotContain('make');
 
+__ __
 
 `.shouldBeNull()`
 
@@ -160,6 +168,7 @@ Assertion passes if the assertion context is null.
     var username = null;
     $$(username).shouldBeNull();
 
+__ __
 
 `.shouldNotBeNull()`
 
@@ -169,6 +178,7 @@ Assertion passes if the assertion context is not null.
     var username = 'john_doe';
     $$(username).shouldNotBeNull();
 
+__ __
 
 `.shouldBeEmpty()`
 
@@ -180,6 +190,7 @@ object ({}).
     $$([]).shouldBeEmpty();
     $$({}).shouldBeEmpty();
 
+__ __
 
 `.shouldNotBeEmpty()`
 
@@ -191,6 +202,7 @@ nor an empty object ({}).
     $$([10, 20, 30]).shouldNotBeEmpty();
     $$({ color: 'green' }).shouldNotBeEmpty();
 
+__ __
 
 `.shouldBeUndefined()`
 
@@ -200,6 +212,7 @@ Assertion passes if the assertion context is undefined.
     var username;
     $$(username).shouldBeUndefined();
 
+__ __
 
 `.shouldBeDefined()`
 
@@ -209,6 +222,7 @@ Assertion passes if the assertion context is defined (not undefined).
     var username = 'john_doe';
     $$(username).shouldBeDefined();
 
+__ __
 
 `.shouldBeTrue()`
 
@@ -218,6 +232,7 @@ Assertion passes if the assertion context evaluates to true (truthy evaluation).
     $$(10 &lt; 100).shouldBeTrue();
     $$(!!1).shouldBeTrue();
 
+__ __
 
 `.shouldBeFalse()`
 
@@ -227,6 +242,7 @@ Assertion passes if the assertion context evaluates to false (falsy evaluation).
     $$(10 &gt; 100).shouldBeFalse();
     $$(!!window.myProp).shouldBeFalse();
 
+__ __
 
 `.shouldBeLessThan(value)`
 
@@ -235,6 +251,7 @@ Assertion passes if the assertion context is less than the value argument.
     // EXAMPLE
     $$(10).shouldBeLessThan(100);
 
+__ __
 
 `.shouldBeMoreThan(num)`
 
@@ -243,6 +260,7 @@ Assertion passes if the assertion context is greater than the num argument.
     // EXAMPLE
     $$(100).shouldBeMoreThan(10);
 
+__ __
 
 `.shouldBeLessThan(num)`
 
@@ -251,6 +269,7 @@ Assertion passes if the assertion context is less than the num argument.
     // EXAMPLE
     $$(10).shouldBeLessThan(100);
 
+__ __
 
 `.shouldThrowException()`
 
