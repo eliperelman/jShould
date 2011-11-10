@@ -47,9 +47,11 @@ __Core__
 `jShould(value)`
 
 Define a value, variable, or expression to run assertions against.
+
     jShould(3);
 
 Can also be used via shorthand:
+
     $$(3);
 
 
