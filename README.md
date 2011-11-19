@@ -295,7 +295,7 @@ __ __
 .shouldBeTrue()
 ```
 
-Assertion passes if the assertion context evaluates to true (truthy evaluation).
+Assertion passes if the assertion context evaluates to true (strict evaluation).
 
 ``` javascript
 // EXAMPLE
@@ -309,7 +309,7 @@ __ __
 .shouldBeFalse()
 ```
 
-Assertion passes if the assertion context evaluates to false (falsy evaluation).
+Assertion passes if the assertion context evaluates to false (strict evaluation).
 
 ``` javascript
 // EXAMPLE
