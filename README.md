@@ -4,7 +4,7 @@ jShould is now the JavaScript assertion library for QUnit. jShould enables devel
 
 First, you need to download jShould and reference it along with QUnit:
 
-``` javascript
+``` html
     <script src="qunit.js"></script>
     <script src="jshould.js"></script>
 ```
