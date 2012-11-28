@@ -13,7 +13,7 @@ Dual licensed under the MIT or GPL Version 2 licenses.
 
 	var is = function (value, type) {
 		// Get the true type of any value. If it's null or undefined, compare that, otherwise get its type class and compare that.
-		return type === (value == null ? '' + value : {}.toString.call(value).slice(8, -1).toLowerCase());
+		return type === value == null ? '' + value : ({}).toString.call(value).slice(8, -1).toLowerCase();
 	},
 	contains = function (source, value) {
 		if (is(source, 'string')) {
